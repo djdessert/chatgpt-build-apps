@@ -1,8 +1,11 @@
+require('dotenv').config();
+process.env.apiKey;
+
 const setupTextarea = document.getElementById('setup-textarea') 
 const setupInputContainer = document.getElementById('setup-input-container')
 const movieBossText = document.getElementById('movie-boss-text')
 
-const apiKey = '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'
+
 const url = 'https://api.openai.com/v1/completions'
 
 document.getElementById("send-btn").addEventListener("click", () => {
